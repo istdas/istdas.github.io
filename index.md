@@ -39,7 +39,7 @@ people:
 meetings:
   - label: "First meeting"
     name: "Okayama Meeting"
-    description: "The group's first gathering — deep discussion in a relaxed environment. The goal is to define a strong list of problems to be solved in the next five years, explore the best form for our collaboration, and lay the foundation for working closely together. Follow-up meetings will be decided during this first one."
+    description: "The group's first gathering — deep discussion in a relaxed environment. The goal is to define a strong list of problems to be solved in the next five years, explore the best form for the collaboration, and lay the foundation for working closely together. Follow-up meetings will be decided during this first one."
     dates: "24–28 August 2026"
     location: "Okayama University, Japan — about 20 minutes by bus, or 10 by taxi, from Okayama Station."
     contact: "Donghui Lin — lindh (a) okayama-u.ac.jp"
