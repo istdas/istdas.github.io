@@ -18,15 +18,15 @@ topics:
     description: "Goals, models, and protocols for coordinating AI-intensive services under uncertainty and shifting service-level agreements."
 
 people:
-  - name: "Donghui Lin"
-    role: "Okayama University, Japan"
-    tag: "Contact"
-  - name: "Yohei Murakami"
-    role: "Ritsumeikan University, Japan"
   - name: "Hong-Linh Truong"
     role: "Aalto University, Finland"
+    tag: "Contact"
   - name: "Liang Zhang"
     role: "Fudan University, China"
+  - name: "Yohei Murakami"
+    role: "Ritsumeikan University, Japan"
+  - name: "Donghui Lin"
+    role: "Okayama University, Japan"
 
 meetings:
   - label: "First meeting"
