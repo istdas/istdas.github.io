@@ -5,11 +5,11 @@ Intelligent, Sovereign &amp; Trustworthy Data, AI and Services
 
 All page content lives in [`index.md`](index.md). No HTML/CSS knowledge is needed.
 
-- Dates, location, tagline: edit the values in the front matter (the section between the `---` markers at the top of the file).
-- Themes: add or edit entries under `topics:` — each has `label`, `title`, and `description`.
-- Organizers: add or edit entries under `organizers:` — each has `name`, `role`, and an optional `tag`.
-- Practical information: add or edit entries under `facts:` — each has `term` and `detail`.
-- Main text (About the meeting): edit the Markdown text after the closing `---`.
+- Group name, subtitle, tagline: edit the values in the front matter (the section between the `---` markers at the top of the file).
+- Topics: add or edit entries under `topics:` — each has `label`, `title`, and `description`.
+- People: add or edit entries under `people:` — each has `name`, `role`, and an optional `tag`.
+- Meetings: add or edit entries under `meetings:` — each has `label`, `name`, `dates`, `location`, `contact`, and an optional `note`. To add a future meeting, copy the whole block of the first one and edit the values.
+- Main text (About ISTDAS): edit the Markdown text after the closing `---`.
 
 The design (colors, fonts, layout) lives in [`_layouts/default.html`](_layouts/default.html). You normally don't need to touch it.
 

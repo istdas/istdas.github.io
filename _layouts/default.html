@@ -103,7 +103,14 @@
   .person .role { font-size: 0.85rem; color: var(--ink-soft); margin-top: 0.15rem; }
   .person .tag { display: inline-block; margin-top: 0.6rem; font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem; color: var(--brass); border: 1px solid var(--brass); padding: 0.15rem 0.5rem; border-radius: 999px; }
 
+  .meetings { display: grid; gap: 1.6rem; margin-top: 1.8rem; }
+  .meeting { background: var(--paper-soft); border-radius: 12px; padding: 1.5rem 1.7rem 1.7rem; }
+  .meeting .label { display: inline-block; font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--brass); border: 1px solid var(--brass); padding: 0.15rem 0.55rem; border-radius: 999px; letter-spacing: 0.06em; text-transform: uppercase; }
+  .meeting h3 { font-family: 'Fraunces', serif; font-size: 1.35rem; margin: 0.7rem 0 0.2rem; }
+  .meeting-note { margin: 1.2rem 0 0; color: var(--ink-soft); font-size: 0.95rem; }
+
   .facts { margin: 1.8rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.6rem; }
+  .meeting .facts { margin-top: 1.2rem; }
   .fact dt { font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--teal); margin-bottom: 0.35rem; }
   .fact dd { margin: 0; color: var(--ink-soft); }
 
@@ -127,25 +134,25 @@
 <header class="hero">
   <div class="hero-inner">
     <div>
-      <span class="eyebrow">{{ page.dates }} · {{ page.location }}</span>
-      <h1>{{ page.event_name }}</h1>
+      <span class="eyebrow">{{ page.eyebrow }}</span>
+      <h1>{{ page.group_name }}</h1>
       <p class="subtitle">{{ page.subtitle }}</p>
       <p class="tagline">{{ page.tagline }}</p>
-      <span class="chip">{{ page.host }}</span>
+      {% if page.chip %}<span class="chip">{{ page.chip }}</span>{% endif %}
     </div>
   </div>
 </header>
 
 <main>
   <section id="about">
-    <h2>About the meeting</h2>
+    <h2>About ISTDAS</h2>
     <div class="lede">
       {{ content }}
     </div>
   </section>
 
   <section id="topics">
-    <h2>Themes we're here to work on</h2>
+    <h2>Topics</h2>
     <div class="topics">
       {% for topic in page.topics %}
       <div class="topic">
@@ -158,9 +165,9 @@
   </section>
 
   <section id="people">
-    <h2>Organizers</h2>
+    <h2>People</h2>
     <div class="people">
-      {% for person in page.organizers %}
+      {% for person in page.people %}
       <div class="person">
         <div class="name">{{ person.name }}</div>
         <div class="role">{{ person.role }}</div>
@@ -170,22 +177,37 @@
     </div>
   </section>
 
-  <section id="practical">
-    <h2>Practical information</h2>
-    <dl class="facts">
-      {% for fact in page.facts %}
-      <div class="fact">
-        <dt>{{ fact.term }}</dt>
-        <dd>{{ fact.detail }}</dd>
+  <section id="meetings">
+    <h2>Meetings</h2>
+    <div class="meetings">
+      {% for meeting in page.meetings %}
+      <div class="meeting">
+        {% if meeting.label %}<span class="label">{{ meeting.label }}</span>{% endif %}
+        <h3>{{ meeting.name }}</h3>
+        <dl class="facts">
+          <div class="fact">
+            <dt>When</dt>
+            <dd>{{ meeting.dates }}</dd>
+          </div>
+          <div class="fact">
+            <dt>Where</dt>
+            <dd>{{ meeting.location }}</dd>
+          </div>
+          <div class="fact">
+            <dt>Contact</dt>
+            <dd>{{ meeting.contact }}</dd>
+          </div>
+        </dl>
+        {% if meeting.note %}<p class="meeting-note">{{ meeting.note }}</p>{% endif %}
       </div>
       {% endfor %}
-    </dl>
+    </div>
   </section>
 </main>
 
 <footer>
   <p>{{ page.footer_note }}</p>
-  <p>Questions? Contact <a href="mailto:{{ page.contact_email }}">{{ page.contact_name }}</a>, {{ page.contact_org }}.</p>
+  <p>Questions? Contact {{ page.contact_name }} — {{ page.contact_display }}</p>
 </footer>
 
 </body>
