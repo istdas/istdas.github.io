@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ISTDAS 2026 — Okayama Meeting on Intelligent, Sovereign &amp; Trustworthy Data, AI and Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,400&family=IBM+Plex+Mono:wght@500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #17212B;
+    --ink-soft: #4B5563;
+    --paper: #F4F2EA;
+    --paper-soft: #EAE6D9;
+    --brass: #A9752E;
+    --gold: #D9B778;
+    --teal: #3E6B65;
+    --line: #DDD8C8;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+    line-height: 1.6;
+  }
+  a { color: var(--brass); }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--brass); outline-offset: 3px; }
+
+  .eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .hero {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 4.5rem 1.5rem 3.5rem;
+  }
+  .hero-inner {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  .hero .eyebrow { color: var(--gold); margin-bottom: 1rem; display: block; }
+  .hero h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(2.6rem, 6vw, 4.2rem);
+    margin: 0 0 0.3rem;
+    letter-spacing: -0.01em;
+  }
+  .hero .subtitle {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(1.1rem, 2.2vw, 1.4rem);
+    color: var(--gold);
+    margin: 0 0 1.4rem;
+  }
+  .hero p.tagline {
+    max-width: 46ch;
+    color: #C9CDD3;
+    margin: 0 0 1.8rem;
+  }
+  .chip {
+    display: inline-flex;
+    gap: 0.6rem;
+    align-items: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    background: rgba(244,242,234,0.08);
+    border: 1px solid rgba(244,242,234,0.22);
+    padding: 0.55rem 0.9rem;
+    border-radius: 999px;
+  }
+  main { max-width: 880px; margin: 0 auto; padding: 0 1.5rem; }
+  section { padding: 3.4rem 0; border-bottom: 1px solid var(--line); }
+  section:last-of-type { border-bottom: none; }
+  h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+    margin: 0 0 1.2rem;
+  }
+  .lede { max-width: 62ch; color: var(--ink-soft); font-size: 1.05rem; }
+
+  .topics { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.6rem; margin-top: 1.8rem; }
+  .topic { border-top: 2px solid var(--teal); padding-top: 0.9rem; }
+  .topic .label { font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; color: var(--teal); letter-spacing: 0.06em; text-transform: uppercase; }
+  .topic h3 { font-family: 'Fraunces', serif; font-size: 1.15rem; margin: 0.4rem 0 0.5rem; }
+  .topic p { margin: 0; color: var(--ink-soft); font-size: 0.96rem; }
+
+  .people { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.4rem; margin-top: 1.8rem; }
+  .person { background: var(--paper-soft); border-radius: 10px; padding: 1.1rem 1.2rem; }
+  .person .name { font-family: 'Fraunces', serif; font-weight: 600; font-size: 1.05rem; }
+  .person .role { font-size: 0.85rem; color: var(--ink-soft); margin-top: 0.15rem; }
+  .person .tag { display: inline-block; margin-top: 0.6rem; font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem; color: var(--brass); border: 1px solid var(--brass); padding: 0.15rem 0.5rem; border-radius: 999px; }
+
+  .facts { margin: 1.8rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.6rem; }
+  .fact dt { font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--teal); margin-bottom: 0.35rem; }
+  .fact dd { margin: 0; color: var(--ink-soft); }
+
+  footer {
+    background: var(--ink);
+    color: #C9CDD3;
+    padding: 2.4rem 1.5rem;
+    text-align: center;
+    font-size: 0.92rem;
+  }
+  footer p { margin: 0.3rem 0; }
+  footer a { color: var(--gold); }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div>
+      <span class="eyebrow">24–28 August 2026 · Okayama, Japan</span>
+      <h1>ISTDAS</h1>
+      <p class="subtitle">Intelligent, Sovereign &amp; Trustworthy Data, AI and Services</p>
+      <p class="tagline">A small working meeting on smart services, sovereign and edge AI, and coordination in the age of autonomous agents.</p>
+      <span class="chip">Hosted by Okayama University</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="about">
+    <h2>About the meeting</h2>
+    <p class="lede">A small group of researchers is gathering in Okayama to think carefully, together, about how intelligent services, sovereign and edge AI, and multi-agent coordination should evolve over the next five years. We're aiming for less a conference and more a working session — a short, honest list of hard problems, and the start of a collaboration built to last.</p>
+  </section>
+
+  <section id="topics">
+    <h2>Themes we're here to work on</h2>
+    <div class="topics">
+      <div class="topic">
+        <span class="label">Theme I</span>
+        <h3>Intelligent Smart Services &amp; Agents</h3>
+        <p>What does "smart" really mean for a service or agent today — and where does that intelligence still fall short?</p>
+      </div>
+      <div class="topic">
+        <span class="label">Theme II</span>
+        <h3>Sovereign AI — the Edge Computing Path</h3>
+        <p>Edge computing as one route to data and AI sovereignty, and the trade-offs — privacy, performance, and beyond — it brings.</p>
+      </div>
+      <div class="topic">
+        <span class="label">Theme III</span>
+        <h3>Coordination in the Era of AI</h3>
+        <p>Goals, models, and protocols for coordinating AI-intensive services under uncertainty and shifting service-level agreements.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="people">
+    <h2>Organizers</h2>
+    <div class="people">
+      <div class="person">
+        <div class="name">Donghui Lin</div>
+        <div class="role">Okayama University, Japan</div>
+        <span class="tag">Host</span>
+      </div>
+      <div class="person">
+        <div class="name">Yohei Murakami</div>
+        <div class="role">Ritsumeikan University, Japan</div>
+      </div>
+      <div class="person">
+        <div class="name">Hong-Linh Truong</div>
+        <div class="role">Aalto University, Finland</div>
+      </div>
+      <div class="person">
+        <div class="name">Liang Zhang</div>
+        <div class="role">Fudan University, China</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="practical">
+    <h2>Practical information</h2>
+    <dl class="facts">
+      <div class="fact">
+        <dt>When</dt>
+        <dd>24–28 August 2026 (core week); some participants extending their stay either side.</dd>
+      </div>
+      <div class="fact">
+        <dt>Where</dt>
+        <dd>Okayama University — about 20 minutes by bus, or 10 by taxi, from Okayama Station.</dd>
+      </div>
+      <div class="fact">
+        <dt>Around Okayama</dt>
+        <dd>Korakuen Garden (one of Japan's three great gardens), Okayama Castle, and the canal town of Kurashiki are all nearby.</dd>
+      </div>
+    </dl>
+  </section>
+</main>
+
+<footer>
+  <p>This page will grow with the collaboration — outputs and future meetings will be linked here.</p>
+  <p>Questions? Contact <a href="mailto:lindh@okayama-u.ac.jp">Donghui Lin</a>, Okayama University.</p>
+</footer>
+
+</body>
+</html>
