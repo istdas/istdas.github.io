@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ISTDAS 2026 — Okayama Meeting on Intelligent, Sovereign &amp; Trustworthy Data, AI and Services</title>
+<title>{{ page.title }}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,400&family=IBM+Plex+Mono:wght@500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -88,6 +88,8 @@
     margin: 0 0 1.2rem;
   }
   .lede { max-width: 62ch; color: var(--ink-soft); font-size: 1.05rem; }
+  .lede p { margin: 0 0 1em; }
+  .lede p:last-child { margin-bottom: 0; }
 
   .topics { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.6rem; margin-top: 1.8rem; }
   .topic { border-top: 2px solid var(--teal); padding-top: 0.9rem; }
@@ -125,11 +127,11 @@
 <header class="hero">
   <div class="hero-inner">
     <div>
-      <span class="eyebrow">24–28 August 2026 · Okayama, Japan</span>
-      <h1>ISTDAS</h1>
-      <p class="subtitle">Intelligent, Sovereign &amp; Trustworthy Data, AI and Services</p>
-      <p class="tagline">A small working meeting on smart services, sovereign and edge AI, and coordination in the age of autonomous agents.</p>
-      <span class="chip">Hosted by Okayama University</span>
+      <span class="eyebrow">{{ page.dates }} · {{ page.location }}</span>
+      <h1>{{ page.event_name }}</h1>
+      <p class="subtitle">{{ page.subtitle }}</p>
+      <p class="tagline">{{ page.tagline }}</p>
+      <span class="chip">{{ page.host }}</span>
     </div>
   </div>
 </header>
@@ -137,75 +139,53 @@
 <main>
   <section id="about">
     <h2>About the meeting</h2>
-    <p class="lede">A small group of researchers is gathering in Okayama to think carefully, together, about how intelligent services, sovereign and edge AI, and multi-agent coordination should evolve over the next five years. We're aiming for less a conference and more a working session — a short, honest list of hard problems, and the start of a collaboration built to last.</p>
+    <div class="lede">
+      {{ content }}
+    </div>
   </section>
 
   <section id="topics">
     <h2>Themes we're here to work on</h2>
     <div class="topics">
+      {% for topic in page.topics %}
       <div class="topic">
-        <span class="label">Theme I</span>
-        <h3>Intelligent Smart Services &amp; Agents</h3>
-        <p>What does "smart" really mean for a service or agent today — and where does that intelligence still fall short?</p>
+        <span class="label">{{ topic.label }}</span>
+        <h3>{{ topic.title }}</h3>
+        <p>{{ topic.description }}</p>
       </div>
-      <div class="topic">
-        <span class="label">Theme II</span>
-        <h3>Sovereign AI — the Edge Computing Path</h3>
-        <p>Edge computing as one route to data and AI sovereignty, and the trade-offs — privacy, performance, and beyond — it brings.</p>
-      </div>
-      <div class="topic">
-        <span class="label">Theme III</span>
-        <h3>Coordination in the Era of AI</h3>
-        <p>Goals, models, and protocols for coordinating AI-intensive services under uncertainty and shifting service-level agreements.</p>
-      </div>
+      {% endfor %}
     </div>
   </section>
 
   <section id="people">
     <h2>Organizers</h2>
     <div class="people">
+      {% for person in page.organizers %}
       <div class="person">
-        <div class="name">Donghui Lin</div>
-        <div class="role">Okayama University, Japan</div>
-        <span class="tag">Host</span>
+        <div class="name">{{ person.name }}</div>
+        <div class="role">{{ person.role }}</div>
+        {% if person.tag %}<span class="tag">{{ person.tag }}</span>{% endif %}
       </div>
-      <div class="person">
-        <div class="name">Yohei Murakami</div>
-        <div class="role">Ritsumeikan University, Japan</div>
-      </div>
-      <div class="person">
-        <div class="name">Hong-Linh Truong</div>
-        <div class="role">Aalto University, Finland</div>
-      </div>
-      <div class="person">
-        <div class="name">Liang Zhang</div>
-        <div class="role">Fudan University, China</div>
-      </div>
+      {% endfor %}
     </div>
   </section>
 
   <section id="practical">
     <h2>Practical information</h2>
     <dl class="facts">
+      {% for fact in page.facts %}
       <div class="fact">
-        <dt>When</dt>
-        <dd>24–28 August 2026 (core week); some participants extending their stay either side.</dd>
+        <dt>{{ fact.term }}</dt>
+        <dd>{{ fact.detail }}</dd>
       </div>
-      <div class="fact">
-        <dt>Where</dt>
-        <dd>Okayama University — about 20 minutes by bus, or 10 by taxi, from Okayama Station.</dd>
-      </div>
-      <div class="fact">
-        <dt>Around Okayama</dt>
-        <dd>Korakuen Garden (one of Japan's three great gardens), Okayama Castle, and the canal town of Kurashiki are all nearby.</dd>
-      </div>
+      {% endfor %}
     </dl>
   </section>
 </main>
 
 <footer>
-  <p>This page will grow with the collaboration — outputs and future meetings will be linked here.</p>
-  <p>Questions? Contact <a href="mailto:lindh@okayama-u.ac.jp">Donghui Lin</a>, Okayama University.</p>
+  <p>{{ page.footer_note }}</p>
+  <p>Questions? Contact <a href="mailto:{{ page.contact_email }}">{{ page.contact_name }}</a>, {{ page.contact_org }}.</p>
 </footer>
 
 </body>
