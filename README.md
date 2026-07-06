@@ -7,7 +7,7 @@ All page content lives in [`index.md`](index.md). No HTML/CSS knowledge is neede
 
 - Group name, subtitle, tagline: edit the values in the front matter (the section between the `---` markers at the top of the file).
 - Topics: add or edit entries under `topics:` — each has `label`, `title`, and `description`.
-- People: add or edit entries under `people:` — each has `name`, `role`, and an optional `tag`.
+- People: add or edit entries under `people:` — each has `name`, `role`, an optional `url` (personal homepage, shown as a link on the name), and an optional `tag`.
 - Meetings: add or edit entries under `meetings:` — each has `label`, `name`, an optional `description` (overview), `dates`, `location`, `contact`, and an optional `note`. To add a future meeting, copy the whole block of the first one and edit the values.
 - Main text (About ISTDAS): edit the Markdown text after the closing `---`.
 

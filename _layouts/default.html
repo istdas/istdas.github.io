@@ -100,6 +100,8 @@
   .people { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.4rem; margin-top: 1.8rem; }
   .person { background: var(--paper-soft); border-radius: 10px; padding: 1.1rem 1.2rem; }
   .person .name { font-family: 'Fraunces', serif; font-weight: 600; font-size: 1.05rem; }
+  .person .name a { color: inherit; text-decoration: underline; text-decoration-color: var(--brass); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  .person .name a:hover { color: var(--brass); }
   .person .role { font-size: 0.85rem; color: var(--ink-soft); margin-top: 0.15rem; }
   .person .tag { display: inline-block; margin-top: 0.6rem; font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem; color: var(--brass); border: 1px solid var(--brass); padding: 0.15rem 0.5rem; border-radius: 999px; }
 
@@ -170,7 +172,7 @@
     <div class="people">
       {% for person in page.people %}
       <div class="person">
-        <div class="name">{{ person.name }}</div>
+        <div class="name">{% if person.url %}<a href="{{ person.url }}">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}</div>
         <div class="role">{{ person.role }}</div>
         {% if person.tag %}<span class="tag">{{ person.tag }}</span>{% endif %}
       </div>
