@@ -7,7 +7,7 @@ group_name: ISTDAS
 subtitle: "Intelligent, Sovereign & Trustworthy Data, AI and Services"
 tagline: "Working on smart services, sovereign and edge AI, and coordination in the era of AI."
 hero_link:
-  text: "First meeting: Okayama, 24–28 August 2026"
+  text: "First meeting: Okayama University, 24–28 August 2026"
   href: "#meetings"
 
 topics:
