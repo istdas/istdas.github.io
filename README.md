@@ -1,16 +1,16 @@
 # istdas.github.io
 Intelligent, Sovereign &amp; Trustworthy Data, AI and Services
 
-## このページを更新するには
+## How to update this page
 
-ページの内容は [`index.md`](index.md) の中にあります。HTML/CSSの知識は不要です。
+All page content lives in [`index.md`](index.md). No HTML/CSS knowledge is needed.
 
-- 日程・場所・キャッチコピー: ファイル冒頭の `---` で囲まれた部分(front matter)の値を書き換えてください。
-- テーマ一覧: `topics:` の下に `label` / `title` / `description` の3項目を追加・編集してください。
-- 主催者一覧: `organizers:` の下に `name` / `role` / `tag`(任意) を追加・編集してください。
-- 実用情報: `facts:` の下に `term` / `detail` を追加・編集してください。
-- 本文(About the meeting): `---` の後の文章をMarkdownで自由に書き換えてください。
+- Dates, location, tagline: edit the values in the front matter (the section between the `---` markers at the top of the file).
+- Themes: add or edit entries under `topics:` — each has `label`, `title`, and `description`.
+- Organizers: add or edit entries under `organizers:` — each has `name`, `role`, and an optional `tag`.
+- Practical information: add or edit entries under `facts:` — each has `term` and `detail`.
+- Main text (About the meeting): edit the Markdown text after the closing `---`.
 
-デザイン(色・フォント・レイアウト)は [`_layouts/default.html`](_layouts/default.html) にまとまっています。通常はここを触る必要はありません。
+The design (colors, fonts, layout) lives in [`_layouts/default.html`](_layouts/default.html). You normally don't need to touch it.
 
-`main` ブランチにpushすると、GitHub Pages が自動的にビルドして https://istdas.github.io に反映されます。
+Pushing to the `main` branch triggers a GitHub Pages build, and the changes go live at https://istdas.github.io within a minute or two.
