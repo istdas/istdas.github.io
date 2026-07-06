@@ -31,6 +31,7 @@ people:
 meetings:
   - label: "First meeting"
     name: "Okayama Meeting"
+    description: "The group's first gathering — less a conference and more a working session. Over a week in Okayama, we will map out a short, honest list of hard problems across our topics and set the direction of the collaboration for the years ahead."
     dates: "24–28 August 2026 (core week); some participants extending their stay either side."
     location: "Okayama University, Japan — about 20 minutes by bus, or 10 by taxi, from Okayama Station."
     contact: "Donghui Lin — lindh (a) okayama-u.ac.jp"

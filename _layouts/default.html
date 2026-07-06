@@ -107,6 +107,7 @@
   .meeting { background: var(--paper-soft); border-radius: 12px; padding: 1.5rem 1.7rem 1.7rem; }
   .meeting .label { display: inline-block; font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; color: var(--brass); border: 1px solid var(--brass); padding: 0.15rem 0.55rem; border-radius: 999px; letter-spacing: 0.06em; text-transform: uppercase; }
   .meeting h3 { font-family: 'Fraunces', serif; font-size: 1.35rem; margin: 0.7rem 0 0.2rem; }
+  .meeting-desc { margin: 0.5rem 0 0; color: var(--ink-soft); max-width: 62ch; }
   .meeting-note { margin: 1.2rem 0 0; color: var(--ink-soft); font-size: 0.95rem; }
 
   .facts { margin: 1.8rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.6rem; }
@@ -184,6 +185,7 @@
       <div class="meeting">
         {% if meeting.label %}<span class="label">{{ meeting.label }}</span>{% endif %}
         <h3>{{ meeting.name }}</h3>
+        {% if meeting.description %}<p class="meeting-desc">{{ meeting.description }}</p>{% endif %}
         <dl class="facts">
           <div class="fact">
             <dt>When</dt>
