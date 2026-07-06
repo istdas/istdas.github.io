@@ -4,6 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ page.title }}</title>
+<meta name="description" content="{{ page.description }}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{{ page.description }}">
+<meta property="og:url" content="https://istdas.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2317212B'/%3E%3Ctext x='32' y='46' font-family='Georgia, serif' font-size='42' font-weight='bold' fill='%23D9B778' text-anchor='middle'%3EI%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,400&family=IBM+Plex+Mono:wght@500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -13,7 +19,7 @@
     --ink-soft: #4B5563;
     --paper: #F4F2EA;
     --paper-soft: #EAE6D9;
-    --brass: #A9752E;
+    --brass: #8A5E22;
     --gold: #D9B778;
     --teal: #3E6B65;
     --line: #DDD8C8;
@@ -78,6 +84,19 @@
     padding: 0.55rem 0.9rem;
     border-radius: 999px;
   }
+  .hero-cta {
+    display: inline-flex;
+    gap: 0.6rem;
+    align-items: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--gold);
+    border: 1px solid rgba(217,183,120,0.45);
+    padding: 0.55rem 0.95rem;
+    border-radius: 999px;
+    text-decoration: none;
+  }
+  .hero-cta:hover { background: rgba(217,183,120,0.12); }
   main { max-width: 880px; margin: 0 auto; padding: 0 1.5rem; }
   section { padding: 3.4rem 0; border-bottom: 1px solid var(--line); }
   section:last-of-type { border-bottom: none; }
@@ -141,6 +160,7 @@
       <h1>{{ page.group_name }}</h1>
       <p class="subtitle">{{ page.subtitle }}</p>
       <p class="tagline">{{ page.tagline }}</p>
+      {% if page.hero_link %}<a class="hero-cta" href="{{ page.hero_link.href }}">{{ page.hero_link.text }} →</a>{% endif %}
       {% if page.chip %}<span class="chip">{{ page.chip }}</span>{% endif %}
     </div>
   </div>

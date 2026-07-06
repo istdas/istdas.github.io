@@ -1,10 +1,14 @@
 ---
 layout: default
 title: "ISTDAS — Research Group on Intelligent, Sovereign & Trustworthy Data, AI and Services"
+description: "ISTDAS is a small research group on intelligent and smart services, sovereign data and AI, and coordination in the era of AI. First meeting: Okayama, Japan, 24–28 August 2026."
 eyebrow: "Research Group"
 group_name: ISTDAS
 subtitle: "Intelligent, Sovereign & Trustworthy Data, AI and Services"
-tagline: "A small group of scientists discussing intelligent and smart services, sovereign data and AI, and coordination in the era of AI."
+tagline: "Working on smart services, sovereign and edge AI, and coordination in the era of AI."
+hero_link:
+  text: "First meeting: Okayama, 24–28 August 2026"
+  href: "#meetings"
 
 topics:
   - label: "Topic I"
@@ -12,7 +16,7 @@ topics:
     description: "What does \"smart\" actually mean for services and agents, and what are the current limitations? Agents are smart — but still not very smart."
   - label: "Topic II"
     title: "Sovereign AI — the Edge AI Approach"
-    description: "Edge computing is probably one of the main ways to achieve data and AI sovereignty — privacy and performance are just one part of the picture. How can sovereign AI be achieved with edge computing, even partially, and which trade-offs in non-functional properties must we deal with?"
+    description: "How can sovereign AI be achieved through edge computing, even partially — and which trade-offs in non-functional properties must we deal with? Privacy and performance are only part of the picture."
   - label: "Topic III"
     title: "Coordination in the Era of AI"
     description: "Coordination for AI-intensive services and with AI techniques: the goals of coordination — service-level agreements, uncertainty, and more — and the models and protocols to support them."
