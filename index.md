@@ -19,17 +19,17 @@ topics:
 
 people:
   - name: "Hong-Linh Truong"
-    role: "Aalto University, Finland"
+    role: "Associate Professor, Aalto University, Finland"
     url: "https://users.aalto.fi/~truongh4/"
     tag: "Contact"
   - name: "Liang Zhang"
-    role: "Fudan University, China"
+    role: "Professor, Fudan University, China"
     url: "https://datascience.fudan.edu.cn/e1/5f/c13398a123231/page.htm"
   - name: "Yohei Murakami"
-    role: "Ritsumeikan University, Japan"
+    role: "Professor, Ritsumeikan University, Japan"
     url: "https://www.ritsumei.ac.jp/~yohei/"
   - name: "Donghui Lin"
-    role: "Okayama University, Japan"
+    role: "Associate Professor, Okayama University, Japan"
     url: "https://lindh.github.io/"
 
 meetings:
