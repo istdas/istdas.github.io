@@ -4,18 +4,18 @@ title: "ISTDAS — Research Group on Intelligent, Sovereign & Trustworthy Data, 
 eyebrow: "Research Group"
 group_name: ISTDAS
 subtitle: "Intelligent, Sovereign & Trustworthy Data, AI and Services"
-tagline: "A small group of researchers working on smart services, sovereign and edge AI, and coordination in the age of autonomous agents."
+tagline: "A small group of scientists discussing intelligent and smart services, sovereign data and AI, and coordination in the era of AI."
 
 topics:
   - label: "Topic I"
     title: "Intelligent Smart Services & Agents"
-    description: "What does \"smart\" really mean for a service or agent today — and where does that intelligence still fall short?"
+    description: "What does \"smart\" actually mean for services and agents, and what are the current limitations? Agents are smart — but still not very smart."
   - label: "Topic II"
-    title: "Sovereign AI — the Edge Computing Path"
-    description: "Edge computing as one route to data and AI sovereignty, and the trade-offs — privacy, performance, and beyond — it brings."
+    title: "Sovereign AI — the Edge AI Approach"
+    description: "Edge computing is probably one of the main ways to achieve data and AI sovereignty — privacy and performance are just one part of the picture. How can sovereign AI be achieved with edge computing, even partially, and which trade-offs in non-functional properties must we deal with?"
   - label: "Topic III"
     title: "Coordination in the Era of AI"
-    description: "Goals, models, and protocols for coordinating AI-intensive services under uncertainty and shifting service-level agreements."
+    description: "Coordination for AI-intensive services and with AI techniques: the goals of coordination — service-level agreements, uncertainty, and more — and the models and protocols to support them."
 
 people:
   - name: "Hong-Linh Truong"
@@ -31,7 +31,7 @@ people:
 meetings:
   - label: "First meeting"
     name: "Okayama Meeting"
-    description: "The group's first gathering — less a conference and more a working session. Over a week in Okayama, we will map out a short, honest list of hard problems across our topics and set the direction of the collaboration for the years ahead."
+    description: "The group's first gathering — deep discussion in a relaxed environment. The goal is to define a strong list of problems to be solved in the next five years, explore the best form for our collaboration, and lay the foundation for working closely together. Follow-up meetings will be decided during this first one."
     dates: "24–28 August 2026 (core week); some participants extending their stay either side."
     location: "Okayama University, Japan — about 20 minutes by bus, or 10 by taxi, from Okayama Station."
     contact: "Donghui Lin — lindh (a) okayama-u.ac.jp"
@@ -39,4 +39,6 @@ meetings:
 
 footer_note: "This page will grow with the collaboration — outputs and future meetings will be linked here."
 ---
-ISTDAS is a research group formed by a small group of researchers working on intelligent services, sovereign and edge AI, and multi-agent coordination. Rather than a formal consortium, we aim to think carefully, together, about how these fields should evolve over the next five years — through working meetings, a short and honest list of hard problems, and collaborations built to last.
+ISTDAS is a small group of scientists who gather to discuss strongly related topics on intelligent and smart services, sovereign data and AI — including edge data and AI — and coordination principles and techniques, including the coordination of AI agents.
+
+We aim for deep discussion in a relaxed environment, a strong list of problems to be solved in five years, and a strong, deep collaboration among us. The group is deliberately kept small — small enough to do real work together.
