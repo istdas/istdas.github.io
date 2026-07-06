@@ -37,7 +37,5 @@ meetings:
     note: "Around Okayama: Korakuen Garden (one of Japan's three great gardens), Okayama Castle, and the canal town of Kurashiki are all nearby."
 
 footer_note: "This page will grow with the collaboration — outputs and future meetings will be linked here."
-contact_name: "Donghui Lin"
-contact_display: "lindh (a) okayama-u.ac.jp"
 ---
 ISTDAS is a research group formed by a small group of researchers working on intelligent services, sovereign and edge AI, and multi-agent coordination. Rather than a formal consortium, we aim to think carefully, together, about how these fields should evolve over the next five years — through working meetings, a short and honest list of hard problems, and collaborations built to last.
