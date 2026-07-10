@@ -67,4 +67,4 @@ footer_note: "This page will grow with the collaboration — outputs and future 
 ---
 ISTDAS is a small group of scientists who gather to discuss a set of closely related topics: intelligent and smart services; sovereign data and AI, including edge data and AI; and coordination principles and techniques, notably the coordination of AI agents.
 
-We aim for deep discussion in a relaxed environment, a strong list of problems to be solved in five years, and a strong, deep collaboration among us. The group is deliberately kept small — small enough to do real work together.
+We aim for deep discussion in a relaxed environment, a strong list of problems to be solved in five years, and lasting collaboration among the members. The group is deliberately kept small — small enough to do real work together.
