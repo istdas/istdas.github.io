@@ -48,7 +48,6 @@ meetings:
       - "700-8530, Japan"
     host:
       text: "Intelligent Computing Laboratory, Okayama University"
-      url: "https://www.ic.cs.okayama-u.ac.jp/en/"
     contact: "Donghui Lin — lindh (a) okayama-u.ac.jp"
     agenda:
       - day: "Day 1"
