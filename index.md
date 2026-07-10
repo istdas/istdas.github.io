@@ -60,7 +60,6 @@ meetings:
         title: "Sovereign AI–Edge AI Infrastructures and Coordination in the Era of AI."
       - day: "Day 5"
         title: "Roadmap writing; broad collaboration contexts (China, Japan, EU); final discussion and planning for the next step."
-    pre_meeting: "Pre-meeting: a visit and discussion at Ritsumeikan University, Kyoto, during 20–21 August 2026."
     note: "Around Okayama: Korakuen Garden (one of Japan's three great gardens), Okayama Castle, and the canal town of Kurashiki are all nearby."
 
 footer_note: "This page will grow with the collaboration — outputs and future meetings will be linked here."
