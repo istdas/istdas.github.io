@@ -132,6 +132,14 @@
   .meeting-desc { margin: 0.5rem 0 0; color: var(--ink-soft); max-width: 62ch; }
   .meeting-note { margin: 1.2rem 0 0; color: var(--ink-soft); font-size: 0.95rem; }
 
+  .agenda { margin-top: 1.6rem; border-top: 1px solid var(--line); padding-top: 1.2rem; }
+  .agenda h4 { font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; color: var(--teal); margin: 0 0 0.8rem; }
+  .agenda-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.55rem; }
+  .agenda-item { display: grid; grid-template-columns: 4.2rem 1fr; gap: 0.9rem; align-items: baseline; }
+  .agenda-day { font-family: 'IBM Plex Mono', monospace; font-size: 0.78rem; color: var(--brass); white-space: nowrap; }
+  .agenda-title { color: var(--ink-soft); font-size: 0.96rem; }
+  .agenda-pre { margin: 1rem 0 0; color: var(--ink-soft); font-size: 0.92rem; font-style: italic; }
+
   .facts { margin: 1.8rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.6rem; }
   .meeting .facts { margin-top: 1.2rem; }
   .fact dt { font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--teal); margin-bottom: 0.35rem; }
@@ -216,13 +224,33 @@
           </div>
           <div class="fact">
             <dt>Where</dt>
-            <dd>{{ meeting.location }}</dd>
+            <dd>{% if meeting.location_lines %}{% for line in meeting.location_lines %}{{ line }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}{% else %}{{ meeting.location }}{% endif %}</dd>
           </div>
+          {% if meeting.host %}
+          <div class="fact">
+            <dt>Host</dt>
+            <dd>{% if meeting.host.url %}<a href="{{ meeting.host.url }}">{{ meeting.host.text }}</a>{% else %}{{ meeting.host.text }}{% endif %}</dd>
+          </div>
+          {% endif %}
           <div class="fact">
             <dt>Contact</dt>
             <dd>{{ meeting.contact }}</dd>
           </div>
         </dl>
+        {% if meeting.agenda %}
+        <div class="agenda">
+          <h4>Agenda</h4>
+          <ol class="agenda-list">
+            {% for item in meeting.agenda %}
+            <li class="agenda-item">
+              <span class="agenda-day">{{ item.day }}</span>
+              <span class="agenda-title">{{ item.title }}</span>
+            </li>
+            {% endfor %}
+          </ol>
+          {% if meeting.pre_meeting %}<p class="agenda-pre">{{ meeting.pre_meeting }}</p>{% endif %}
+        </div>
+        {% endif %}
         {% if meeting.note %}<p class="meeting-note">{{ meeting.note }}</p>{% endif %}
       </div>
       {% endfor %}

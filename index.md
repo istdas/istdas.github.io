@@ -41,8 +41,27 @@ meetings:
     name: "Okayama Meeting"
     description: "The group's first gathering — deep discussion in a relaxed environment. The goal is to define a strong list of problems to be solved in the next five years, explore the best form for the collaboration, and lay the foundation for working closely together. Follow-up meetings will be decided during this first one."
     dates: "24–28 August 2026"
-    location: "Okayama University, Japan — about 20 minutes by bus, or 10 by taxi, from Okayama Station."
+    location_lines:
+      - "Faculty of Engineering Building No.4"
+      - "Tsushima Campus (North), Okayama University"
+      - "3-1-1 Tsushima-naka, Kita-ku, Okayama,"
+      - "700-8530, Japan"
+    host:
+      text: "Intelligent Computing Laboratory, Okayama University"
+      url: "https://www.ic.cs.okayama-u.ac.jp/en/"
     contact: "Donghui Lin — lindh (a) okayama-u.ac.jp"
+    agenda:
+      - day: "Day 1"
+        title: "Introduction of individual research works (IoT, smart services, business processes, Edge AI agents, etc.) and potential means of collaborations."
+      - day: "Day 2"
+        title: "IoT Services and Smart Business Processes."
+      - day: "Day 3"
+        title: "Intelligent Smart Services/Agents."
+      - day: "Day 4"
+        title: "Sovereign AI–Edge AI Infrastructures and Coordination in the Era of AI."
+      - day: "Day 5"
+        title: "Roadmap writing; broad collaboration contexts (China, Japan, EU); final discussion and planning for the next step."
+    pre_meeting: "Pre-meeting: a visit and discussion at Ritsumeikan University, Kyoto, during 20–21 August 2026."
     note: "Around Okayama: Korakuen Garden (one of Japan's three great gardens), Okayama Castle, and the canal town of Kurashiki are all nearby."
 
 footer_note: "This page will grow with the collaboration — outputs and future meetings will be linked here."
