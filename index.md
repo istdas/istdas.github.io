@@ -59,8 +59,8 @@ meetings:
       - day: "Day 4"
         title: "Sovereign AI–Edge AI Infrastructures and Coordination in the Era of AI."
       - day: "Day 5"
-        title: "Roadmap writing; broad collaboration contexts (China, Japan, EU); final discussion and planning for the next step."
-    note: "Around Okayama: Korakuen Garden (one of Japan's three great gardens), Okayama Castle, and the canal town of Kurashiki are all nearby."
+        title: "Roadmap writing; broad collaboration contexts (China, Japan, EU, Asia); final discussion and planning for the next step."
+    Okayama: Korakuen Garden (one of Japan's three great gardens), Okayama Castle, and the canal town of Kurashiki are all nearby.
 
 footer_note: "This page will grow with the collaboration — outputs and future meetings will be linked here."
 ---
