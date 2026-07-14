@@ -35,6 +35,9 @@ people:
   - name: "Donghui Lin"
     role: "Associate Professor, Okayama University, Japan"
     url: "https://lindh.github.io/"
+  - name: "Chang-Gun Lee"
+    role: "Professor, Seoul National University, South Korea"
+    url: "https://cse.snu.ac.kr/en/people/faculty/54"
 
 meetings:
   - label: "First meeting"
